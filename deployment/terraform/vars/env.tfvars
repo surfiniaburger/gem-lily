@@ -1,23 +1,23 @@
 # Your Production Google Cloud project id
-prod_project_id = "gem-creation"
+prod_project_id = "akoben-83375"
 
 # Your Staging / Test Google Cloud project id
-staging_project_id = "gem-creation"
+staging_project_id = "akoben-83375"
 
 # Your Google Cloud project ID that will be used to host the Cloud Build pipelines.
-cicd_runner_project_id = "gem-creation"
+cicd_runner_project_id = "akoben-83375"
 
 # Name of the host connection you created in Cloud Build
 host_connection_name = "test-cicd"
 
 # Name of the repository you added to Cloud Build
-repository_name = " surfiniaburger-gem-lily"
+repository_name = "surfiniaburger-gem-lily"
 
 # The Google Cloud region you will use to deploy the infrastructure
 region = "us-central1"
 
-telemetry_bigquery_dataset_id = "telemetry_genai_app_sample_sink"
-telemetry_sink_name = "telemetry_logs_genai_app_sample"
+telemetry_bigquery_dataset_id = "telemetry_genai_app_sink"
+telemetry_sink_name = "telemetry_logs_genai_sample"
 telemetry_logs_filter = "jsonPayload.attributes.\"traceloop.association.properties.log_type\"=\"tracing\" jsonPayload.resource.attributes.\"service.name\"=\"Sample Chatbot Application\""
 
 feedback_bigquery_dataset_id = "feedback_genai_app_sample_sink"
@@ -25,7 +25,7 @@ feedback_sink_name = "feedback_logs_genai_app_sample"
 feedback_logs_filter = "jsonPayload.log_type=\"feedback\""
 
 cicd_runner_sa_name = "cicd-runner"
-cloud_run_app_sa_name = "genai-app-sample-cr-sa"
+cloud_run_app_sa_name = "genai-app-cr-sa"
 
 suffix_bucket_name_load_test_results = "cicd-load-test-results"
 artifact_registry_repo_name = "genai-containers"
